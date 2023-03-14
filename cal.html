@@ -1,0 +1,42 @@
+<html>
+    <head>
+        <title>calculator</title>
+    </head>
+    <body>
+        <script>
+            function add(){
+                var x=parseInt(document.getElementById("num").value);
+                var y=parseInt(document.getElementById("num2").value);
+                var s= (x+y);
+                document.getElementById("num3").value=s;
+                
+            }
+            function sub(){
+                var x=parseInt(document.getElementById("num").value);
+                var y=parseInt(document.getElementById("num2").value);
+                var s= (x-y);
+                document.getElementById("num3").value=s;
+
+            }
+            function multiply(){
+                var x=parseInt(document.getElementById("num").value);
+                var y=parseInt(document.getElementById("num2").value);
+                var s= (x*y);
+                document.getElementById("num3").value=s;
+            }
+        </script>
+
+        
+            <label>first number</label>
+            <input type="number" id="num"><br><br>
+            <label>Second number</label>
+            <input type="number" id="num2"><br><br>
+            <button onclick="add()">Add</button>
+            <button onclick="sub()">Substract</button>
+            <button onclick="multiply()" >multiply</button><br><br>
+            <label>output</label>
+            <input id="num3" >
+            
+        
+    </body>
+</html>
