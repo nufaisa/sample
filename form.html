@@ -1,0 +1,74 @@
+<html>
+    <head>
+        <title>form</title>
+    </head>
+    <style>
+        table{
+            align-content: center;
+            background-color: blueviolet;
+            justify-content: center;
+            align-content: center;
+            
+           
+        }
+        th{
+            background-color: black;
+            color: azure;
+        
+        }
+        input[type=button]{
+            padding: 12px 20px;
+            margin:8px;
+            background-color: rgb(240, 41, 6);
+            font-style: normal;
+            color:blanchedalmond;
+        }
+    </style>
+    <body>
+        <table>
+            <tr style="height: 50px;">
+            <th colspan="3">Event Registeration Form</th>
+            
+            </tr>
+            
+            <tr style="height: 45px;"> 
+                <td>Name</td>
+                <td><input type="name" id="name" placeholder="First name" > </td>
+                <td><input type="name" id="name" placeholder="Last name"></td>                
+            </tr>
+            <tr style="height: 45px;">
+                <td>Company</td>
+                <td ><input type="text" id="company"></td>
+            </tr>
+            <tr style="height: 45px;">
+                <td>Email</td>
+                <td><input type="email" id="email" name="email" placeholder="example@gmail.com"></td>
+            </tr>
+            <tr style="height: 45px;">
+                <td>phone</td>
+                <td><input type="number" id="code" name="number" placeholder="Area code"></td>
+                <td><input type="number" id="number" placeholder="phone number" ></td>
+            </tr>
+            <tr style="height: 45px;">
+                <td>Subject</td>
+                <td ><select>
+                    <option>Party</option>
+                    <option>Engagement</option>
+                    <option>Marriage</option>
+                </select></td>
+            </tr>
+            <tr style="height: 45px;">
+                <td>Are you an existing customer?</td>
+               
+            </tr>
+            <tr style="height: 45px;">
+                <td ><input type="radio" id="yes" name="yes" value="Yes">Yes</td>
+                <td > <input type="radio" id="no" name="yes" value="No">No</td>
+            </tr>
+            <tr style="height: 45px;">
+            <td><input type="button" id="submit" value="REGISTER" onclick="alert('Registered successfully')">
+            </td>
+            </tr>
+        </table>
+    </body>
+</html>
